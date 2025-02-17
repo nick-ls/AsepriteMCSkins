@@ -1,0 +1,8 @@
+{
+    "workspace.library": [
+        "aseprite"
+    ],
+	"diagnostics": {
+		"disable": ["lowercase-global", "redundant-parameter"]
+	}
+}

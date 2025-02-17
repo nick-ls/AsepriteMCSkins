@@ -9,6 +9,10 @@
   "contributors": [],
   "publisher": "Astropulse",
   "license": "MIT",
+  "scripts": {
+    "build": "bestzip publish.zip package.json src/extension.lua src/__info.json",
+    "watch": "nodemon --watch src --exec npm run build"
+  },
   "categories": [
     "Scripts"
   ],
@@ -18,5 +22,9 @@
         "path": "./extension.lua"
       }
     ]
+  },
+  "devDependencies": {
+    "bestzip": "^2.2.1",
+    "nodemon": "^3.1.9"
   }
 }
